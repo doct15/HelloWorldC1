@@ -4,9 +4,9 @@ bmcgehee/HelloWorldC1:
     # Define the TCP port you want the IIS application to listen on
     - PORT: "8085"
     # Define the Name for the IIS application
-    - SITE: blog2
+    - SITE: helloworldc1
     # Define the Directory full path where the IIS application should reside
-    - APPDIR: c:\blog2
+    - APPDIR: c:\helloworldc1
 
   Build:
     - cd HelloWorld
@@ -14,8 +14,8 @@ bmcgehee/HelloWorldC1:
     - '"c:\Program Files (x86)\MSBuild\14.0\Bin\MSBuild.exe" HelloWorld.sln /property:OutDir=target\'
     
   PkgInclude:
-    - BlogEngine\BlogEngine.NET\
-    - target\
+    #- target\
+    - '*'
     
   PreInstall:
     - echo "Begin PreInstall"
