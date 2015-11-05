@@ -44,10 +44,10 @@ bmcgehee/HelloWorldC1:
   PostInstall:
     - echo "Begin PostInstall"
     #- 7za x *.zip -o%APPDIR%\
-    - xcopy BlogEngine\BlogEngine.Net\* %APPDIR%\ /E
-    - attrib -r %APPDIR%\App_Data /s /d
-    - icacls "%APPDIR%\App_Data" /grant IIS_IUSRS:(OI)(CI)F /t
-    - icacls "%APPDIR%\App_Data" /grant IUSR:(OI)(CI)F /t
+    #- xcopy BlogEngine\BlogEngine.Net\* %APPDIR%\ /E
+    #- attrib -r %APPDIR%\App_Data /s /d
+    #- icacls "%APPDIR%\App_Data" /grant IIS_IUSRS:(OI)(CI)F /t
+    #- icacls "%APPDIR%\App_Data" /grant IUSR:(OI)(CI)F /t
     - echo "Done PostInstall"
 
   Start:
