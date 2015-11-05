@@ -11,7 +11,7 @@ bmcgehee/HelloWorldC1:
   Build:
     - cd HelloWorld
     - mkdir -p target
-    - '"c:\Program Files (x86)\MSBuild\14.0\Bin\MSBuild.exe" HelloWorld.sln /property:OutDir=target\'
+    - '"c:\Program Files (x86)\MSBuild\14.0\Bin\MSBuild.exe" HelloWorld.sln /property:OutDir=target\;DeployOnBuild=true;DeployTarget=Package'
     
   PkgInclude:
     #- target\
